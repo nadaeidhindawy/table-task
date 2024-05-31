@@ -1,0 +1,106 @@
+body {
+    background-color: #f7ecde;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::before {
+    height: 50%;
+}
+
+.line::before {
+    content: "------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+}
+
+
+.vist {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.delete {
+    color: #fff;
+}
+
+.a-void {
+    background-color: #fec260;
+    width: 239px;
+    height: 14px;
+    position: absolute;
+    top: 84px;
+    left: 513px;
+    right: 0;
+}
+
+.a-void:hover {
+    background-color: #fec260;
+    width: 239px;
+    height: 25px;
+    padding-bottom: -15px;
+
+}
+
+
+h5 {
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(to left,
+            violet,
+            indigo,
+            green,
+            orange,
+            red);
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+
+.site-me {
+    i {
+        font-size: 20px;
+    }
+}
+
+.btn-submit {
+    color: #fff;
+    background-color: #d1512d;
+    border: #d1512d solid 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit:hover {
+    color: #fff;
+    background-color: #bb4120;
+}
+
+
+.btn {
+    margin: 0 6px;
+}
+
+.custom-loader {
+    animation: none !important;
+    border-width: 0 !important;
+}
